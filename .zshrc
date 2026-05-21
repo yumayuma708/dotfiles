@@ -152,6 +152,10 @@ export PATH="$PATH:$(npm config get prefix)/bin"
 export PATH="$PATH:$HOME/.pub-cache/bin"
 export PATH="$(brew --prefix postgresql@14)/bin:$PATH"
 
+# ===== Starship プロンプト =====
+# 設定ファイル: ~/.config/starship.toml （dotfiles へのシンボリックリンク）
+eval "$(starship init zsh)"
+
 # ===== 略語展開（fish の abbr 相当） =====
 # スペースを押した瞬間に略語を実コマンドへ展開する
 typeset -A ZSH_ABBR
